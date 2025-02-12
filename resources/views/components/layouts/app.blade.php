@@ -20,9 +20,12 @@
     <body class="font-sans antialiased dark:bg-black dark:text-white/50">
         <div class="max-w-4xl mx-auto px-6 grid grid-cols-8  gap-12  mt-12">
             <div class="col-span-2 border-r border-gray-200 space-y-6">
+                @auth
             <ul class="">
                 <li>
-                    <span class="font-bold text-lg text-slate-400 hover:text-slate-600 block py-1" href="">Ahmad</span>
+                    <span class="font-bold text-lg text-slate-400 hover:text-slate-600 block py-1" href="">
+                        {{auth()->user()->name}}
+                    </span>
                 </li>
                 <li>
                     <a class="font-bold text-lg text-slate-400 hover:text-slate-600 block py-1" href="">Feed</a>
@@ -32,10 +35,16 @@
             <ul class="">
                
                 <li>
-                    <a class="font-bold text-lg text-slate-400 hover:text-slate-600 block py-1" href="">my book</a>
+                    <a class="font-bold text-lg text-slate-400 hover:text-slate-600 block py-1" href="">My books</a>
+                </li>
+                <li>
+                    <a class="font-bold text-lg text-slate-400 hover:text-slate-600 block py-1" href="">Add a book</a>
+                </li>
+                <li>
+                    <a class="font-bold text-lg text-slate-400 hover:text-slate-600 block py-1" href="">Friends</a>
                 </li>
             </ul>
-     
+      @endauth
           
             </div>
 <div class="col-span-6">
