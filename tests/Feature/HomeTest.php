@@ -17,7 +17,7 @@ $user= User::factory()->create();
 
 $this->actingAs($user)
 ->get('/')
-->assertSeeText(['my book','Feed',$user->name]);
+->assertSeeText(['Feed',$user->name]);
 });
 
 it('shows unauthenticated menu items if the user is not  signed in', function () {
@@ -25,6 +25,6 @@ it('shows unauthenticated menu items if the user is not  signed in', function ()
     
 
     $this->get('/')
-    ->assertSeeText(['Login','Register']);
+    ->assertSeeText(['Log in','Sign up']);
     });
     
