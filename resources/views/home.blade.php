@@ -8,5 +8,5 @@
     <div class="mt-8">
         Sign up to get started
     </div>
-    @endgues
+    @endguest
 </x-layouts.app>

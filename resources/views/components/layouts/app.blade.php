@@ -45,6 +45,17 @@
                 </li>
             </ul>
       @endauth
+
+        @guest
+        <ul class="">
+            <li>
+                <a class="font-bold text-lg text-slate-400 hover:text-slate-600 block py-1" href="">Sign up</a>
+            </li>
+            <li>
+                <a class="font-bold text-lg text-slate-400 hover:text-slate-600 block py-1" href="">Log in</a>
+            </li>
+        </ul>
+        @endguest
           
             </div>
 <div class="col-span-6">
